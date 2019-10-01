@@ -16,6 +16,7 @@ exports.handler = async event => {
     };
   }
 
+
   if (event.httpMethod === "POST") {
     const parsedBodyContent = JSON.parse(event.body);
     const shownCode = parsedBodyContent["shown"]["0"];
